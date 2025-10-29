@@ -6,9 +6,11 @@ A web application for booking safari trips, built with React, TypeScript, and Vi
 
 ## ✨ Features
 
-*   **Project Refactoring:** Major reorganization of the project structure for better scalability, including component architecture and page routing.
-*   **Hero Section:** A visually appealing hero section for the main page.
+*   **Project Refactoring:** Major reorganization of the project structure for better scalability.
 *   **Header Component:** A fully responsive header with navigation links and logo.
+*   **Hero Section:** A visually appealing hero section for the main page.
+*   **Services Section:** Displays the various services and packages offered.
+
 
 ## 🛠️ Tech Stack & Setup
 
