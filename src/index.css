@@ -10,11 +10,27 @@
   /* Colors */
   --color-orange: rgb(248, 70, 11);
   --color-primary-text-color: #222821;
+  /* Fonts */
+  --font-jetbrains: "JetBrains Mono", "monospace";
 }
 
 /* Body */
 
 body {
   color: var(--color-primary-text-color);
-  background-color: #efefef;
+  background-color: #222821;
+}
+
+/* Global Classes */
+
+.lc-flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.lc-flex-between {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }

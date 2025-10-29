@@ -3,11 +3,11 @@ import {createBrowserRouter, RouterProvider} from "react-router";
 
 // Components
 import MainLayout from "../layouts/MainLayout";
-import Home from "../pages/Home";
-import About from "../pages/About";
-import Login from "../pages/Login";
-import Register from "../pages/Register";
-import Error from "../pages/Error";
+import Home from "../pages/home/Home";
+import About from "../pages/about/About";
+import Login from "../pages/login/Login";
+import Register from "../pages/register/Register";
+import Error from "../pages/error/Error";
 
 // App Routes
 const router = createBrowserRouter([
