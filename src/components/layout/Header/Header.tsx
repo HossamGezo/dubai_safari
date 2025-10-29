@@ -3,18 +3,18 @@ import {useState} from "react";
 // React Icons
 import {IoMenu} from "react-icons/io5";
 import {MdOutlineClose} from "react-icons/md";
-import Navbar from "./Navbar";
-import Logo from "./Logo";
+import Navbar from "./components/Navbar";
+import Logo from "./components/Logo";
 // Styles
-import "./styles.css";
-
+import "./styles.scss";
+// Component
 const Header = () => {
   const [toggle, setToggle] = useState(false);
   return (
     <>
       <header className="header bg-white ">
-        <div className="container m-auto flex items-center justify-between px-5 py-1 relative">
-          <Logo />
+        <div className="container m-auto px-5 py-1 relative lc-flex-between">
+          <Logo setToggle={setToggle} />
           <Navbar toggle={toggle} setToggle={setToggle} />
           {/* Header Menu */}
           <div
