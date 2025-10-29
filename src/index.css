@@ -18,7 +18,7 @@
 
 body {
   color: var(--color-primary-text-color);
-  background-color: #222821;
+  background-color: #F1F1F1
 }
 
 /* Global Classes */
@@ -33,4 +33,10 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+.lc-flex-around {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
