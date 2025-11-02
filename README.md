@@ -12,6 +12,7 @@ A web application for booking safari trips, built with React, TypeScript, and Vi
     *   Includes advanced filtering functionality.
 *   **Hero Section:** A visually appealing hero section for the main page.
 *   **Services Section:** Displays the various services and packages offered.
+*   **Banner Section:** An informational or promotional banner.
 *   **Header Component:** A fully responsive header with navigation links and logo.
 
 
@@ -19,6 +20,8 @@ A web application for booking safari trips, built with React, TypeScript, and Vi
 
 *   **Framework:** React with TypeScript & Vite
 *   **Styling:** Tailwind CSS
+*   **Routing:** React Router
+*   **Icons:** React Icons
 
 ## 🚀 How to Run
 
