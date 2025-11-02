@@ -7,7 +7,7 @@ import Navbar from "./components/Navbar";
 import Logo from "./components/Logo";
 // Styles
 import "./styles.css";
-// Component
+// Main Component
 const Header = () => {
   const [toggle, setToggle] = useState(false);
   return (

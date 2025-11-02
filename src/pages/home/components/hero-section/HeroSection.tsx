@@ -2,7 +2,7 @@
 import Button from "../../../../components/common/button/Button";
 // React Icons
 import {IoIosSearch} from "react-icons/io";
-// Component
+// Main Component
 const HeroSection = () => {
   return (
     <>

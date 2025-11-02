@@ -12,7 +12,7 @@ type NavbarTypes = {
   toggle: boolean;
   setToggle: React.Dispatch<React.SetStateAction<boolean>>;
 };
-// Component
+// Main Component
 const Navbar = ({toggle, setToggle}: NavbarTypes) => {
   // Handle Closing Mobile Menu After Open It
   useEffect(() => {

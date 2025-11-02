@@ -1,0 +1,25 @@
+@import "tailwindcss";
+
+@layer components {
+  .pagination {
+    @apply max-md:w-[75%] max-lg:w-[50%] w-[40%] mx-auto mt-16 flex text-white font-bold;
+    button {
+      @apply h-10 border border-r-0 flex items-center justify-center cursor-pointer select-none border-[#333] bg-orange-800 hover:bg-orange-600 hover:text-white active:bg-orange-500;
+    }
+    .pagination-btn {
+      @apply w-[15%] text-2xl rounded-l-sm disabled:opacity-75 disabled:cursor-not-allowed disabled:hover:bg-orange-800;
+      &:last-child {
+        @apply border-r rounded-l-none rounded-r-sm;
+      }
+    }
+    .pagination-pages {
+      @apply w-[70%] flex;
+      .pagination-btn-page {
+        @apply text-xl grow;
+        &.active {
+          @apply bg-orange-500 text-white;
+        }
+      }
+    }
+  }
+}

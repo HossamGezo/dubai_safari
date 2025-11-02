@@ -4,7 +4,7 @@ import "./styles.css";
 type TitleType = {
   title: string;
 };
-// Component
+// Main Component
 const Title = ({title}: TitleType) => {
   return (
     <>

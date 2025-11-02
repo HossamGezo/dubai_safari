@@ -12,7 +12,7 @@ type TourType = {
     image: string;
   };
 };
-// Component
+// Main Component
 const Tour = ({tour}: TourType) => {
   return (
     <>
@@ -25,7 +25,7 @@ const Tour = ({tour}: TourType) => {
             className="w-full h-full object-cover"
           />
           <span className="label absolute left-2.5 -bottom-4 w-[150px] text-center select-none bg-orange-800 text-white font-bold rounded-sm py-1">
-            ADVENTURE
+            ADVENTURE_{tour.id}
           </span>
         </div>
         {/* Tour Desc Wrapper */}

@@ -29,7 +29,7 @@ const services = [
     icon: <TbWorld />,
   },
 ];
-// Component
+// Main Component
 const ServicesSection = () => (
   <>
     <div className="container m-auto py-20">
@@ -43,7 +43,6 @@ const ServicesSection = () => (
           </Service>
         ))}
       </div>
-      {/* Pagination */}
     </div>
   </>
 );

@@ -2,8 +2,7 @@
 import HeroSection from "./components/hero-section/HeroSection";
 import ServicesSection from "./components/services-section/ServicesSection";
 import ToursSection from "./components/tours-section/ToursSection";
-
-// Componet
+// Main Componet
 const Home = () => {
   return (
     <>

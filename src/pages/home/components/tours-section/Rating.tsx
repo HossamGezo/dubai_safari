@@ -6,6 +6,7 @@ import {FaRegStar} from "react-icons/fa";
 type RatingType = {
   rating: number;
 };
+// Main Component
 const Rating = ({rating}: RatingType) => {
   // Checking Rate Function -> To check Rating Less Than 1
   const checkRating = () => {
@@ -13,19 +14,20 @@ const Rating = ({rating}: RatingType) => {
     if (ratingResult >= 0.5) return <FaRegStarHalfStroke />;
     else if (ratingResult !== 0 && ratingResult < 0.5) return <FaRegStar />;
   };
+  // Fill Stars Array
+  const fillStarsArray = Array(Math.trunc(rating)).fill(0);
+  // Empty Stars Array
+  const emptyStarsArray = Array(5 - Math.ceil(rating)).fill(0);
+  // Return JSX
   return (
     <div className="stars flex items-center gap-0.5 text-[18px] text-yellow-500">
-      {Array(Math.trunc(rating))
-        .fill(0)
-        .map((_, index) => (
-          <FaStar key={index} />
-        ))}
+      {fillStarsArray.map((_, index) => (
+        <FaStar key={index} />
+      ))}
       {checkRating()}
-      {Array(5 - Math.ceil(rating))
-        .fill(0)
-        .map((_, index) => (
-          <FaRegStar key={index} />
-        ))}
+      {emptyStarsArray.map((_, index) => (
+        <FaRegStar key={index} />
+      ))}
     </div>
   );
 };

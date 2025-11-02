@@ -3,8 +3,7 @@ type ButtonType = {
   customStyles?: string;
   children: React.ReactNode;
 };
-
-// Component
+// Main Component
 const Button = ({customStyles, children}: ButtonType) => {
   return (
     <>
