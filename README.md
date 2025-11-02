@@ -13,6 +13,7 @@ A web application for booking safari trips, built with React, TypeScript, and Vi
 *   **Hero Section:** A visually appealing hero section for the main page.
 *   **Services Section:** Displays the various services and packages offered.
 *   **Banner Section:** An informational or promotional banner.
+*   **Newsletter Section:** A subscription form for the newsletter.
 *   **Header Component:** A fully responsive header with navigation links and logo.
 
 
