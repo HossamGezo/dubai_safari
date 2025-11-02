@@ -3,6 +3,7 @@ import HeroSection from "./components/hero-section/HeroSection";
 import ServicesSection from "./components/services-section/ServicesSection";
 import ToursSection from "./components/tours-section/ToursSection";
 import Banner from "./components/banner/Banner";
+import NewsLetter from "./components/news-letter/NewsLetter";
 // Main Componet
 const Home = () => {
   return (
@@ -15,6 +16,8 @@ const Home = () => {
       <ToursSection />
       {/* Banner Section */}
       <Banner />
+      {/* News Letter Section */}
+      <NewsLetter />
     </>
   );
 };
