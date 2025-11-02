@@ -1,12 +1,10 @@
 // Types
 type ButtonType = {
-  size?: "sm" | "md";
   customStyles?: string;
+  children: React.ReactNode;
 };
-
-// Component
-const Button = ({size = "sm", customStyles}: ButtonType) => {
-  const widthClass = size === "sm" ? "w-36" : "w-md";
+// Main Component
+const Button = ({customStyles, children}: ButtonType) => {
   return (
     <>
       <button
@@ -14,9 +12,10 @@ const Button = ({size = "sm", customStyles}: ButtonType) => {
         className={`
           bg-orange-500 font-bold text-white cursor-pointer
           hover:bg-orange-600 active:bg-orange-500 transition-colors
-          duration-300 rounded-full tracking-wider select-none ${widthClass} ${customStyles}`}
+          duration-300 rounded-full tracking-wider select-none ${customStyles}
+        `}
       >
-        Search
+        {children}
       </button>
     </>
   );

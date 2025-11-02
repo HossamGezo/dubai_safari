@@ -1,8 +1,8 @@
 // Project Components
-import Button from "../../../../components/common/Button";
+import Button from "../../../../components/common/button/Button";
 // React Icons
 import {IoIosSearch} from "react-icons/io";
-// Component
+// Main Component
 const HeroSection = () => {
   return (
     <>
@@ -21,7 +21,9 @@ const HeroSection = () => {
                 className="w-full h-full max-md:placeholder:text-sm placeholder:text-[18px] placeholder:select-none outline-0 caret-orange"
               />
             </div>
-            <Button customStyles="max-md:mr-0.5 mr-1 max-md:px-0 max-md:py-1 px-7 py-3" />
+            <Button customStyles="max-md:mr-0.5 mr-1 max-md:px-0 max-md:py-1 px-7 py-3 w-[150px]">
+              Search
+            </Button>
           </div>
           {/* Hero Text */}
           <div className="hear-text container absolute font-jetbrains text-white max-md:pr-0 px-8 bottom-[20%] left-[50%] translate-x-[-50%] tracking-widest [-webkit-text-stroke:1px_white]">

@@ -6,7 +6,7 @@ import DubaiLogo from "../../../../images/logo.png";
 type LogoTypes = {
   setToggle: React.Dispatch<React.SetStateAction<boolean>>;
 };
-// Component
+// Main Component
 const Logo = ({setToggle}: LogoTypes) => {
   return (
     <div className="logo -ml-5" onClick={() => setToggle(false)}>

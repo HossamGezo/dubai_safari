@@ -1,22 +1,49 @@
-// Types
-type ServicesSectionType = {
-  service: string;
-  children: React.ReactNode;
-};
-// Component
-const ServicesSection = ({service, children}: ServicesSectionType) => {
-  return (
-    <>
-      <div
-        className={`service lc-flex-between group rounded-full px-7 py-2.5 border border-orange-500
-        cursor-pointer font-bold hover:bg-orange-500 hover:text-white transition-colors duration-300 gap-2.5`}
-      >
-        <span className="icon text-orange-700 max-md:text-lg md:text-2xl group-hover:text-white transition-colors duration-300">
-          {children}
-        </span>
-        <p className="service-desc max-md:text-lg md:text-xl">{service}</p>
+// React Icons
+import {GrGallery} from "react-icons/gr";
+import {FaUsers} from "react-icons/fa";
+import {FaCity} from "react-icons/fa6";
+import {TbWorld} from "react-icons/tb";
+// Components
+import Service from "./Service";
+import Title from "../../../../components/common/section-title/Title";
+// Services Array
+const services = [
+  {
+    id: 1,
+    service: "Adventures",
+    icon: <GrGallery />,
+  },
+  {
+    id: 2,
+    service: "Family tours",
+    icon: <FaUsers />,
+  },
+  {
+    id: 3,
+    service: "City cards",
+    icon: <FaCity />,
+  },
+  {
+    id: 4,
+    service: "Multy-day trips",
+    icon: <TbWorld />,
+  },
+];
+// Main Component
+const ServicesSection = () => (
+  <>
+    <div className="container m-auto py-20">
+      {/* Title */}
+      <Title title={"services"} />
+      {/* Service */}
+      <div className="services-wrapper grid grid-cols-[repeat(auto-fill,minmax(300px,1fr))] gap-10">
+        {services.map((service) => (
+          <Service key={service.id} service={service.service}>
+            {service.icon}
+          </Service>
+        ))}
       </div>
-    </>
-  );
-};
+    </div>
+  </>
+);
 export default ServicesSection;
