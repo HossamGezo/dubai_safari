@@ -1,19 +1,10 @@
+// Components
 import Button from "../../../../components/common/button/Button";
 import Rating from "./Rating";
 // Types
-type TourType = {
-  tour: {
-    id: number;
-    title: string;
-    duration: string;
-    rating: number;
-    reviews: string;
-    priceFrom: number;
-    image: string;
-  };
-};
+import type {ToursListType} from "../../../../types";
 // Main Component
-const Tour = ({tour}: TourType) => {
+const Tour = ({...tour}: ToursListType) => {
   return (
     <>
       <div className="tour-box h-[620px] rounded-xl overflow-hidden bg-white shadow-xl haver:shadow-3xl hover:-translate-y-3 hover:scale-101 duration-500">
@@ -31,7 +22,7 @@ const Tour = ({tour}: TourType) => {
         {/* Tour Desc Wrapper */}
         <div className="tour-desc-wrapper h-[50%] pt-8 px-3 relative">
           {/* Tour Title */}
-          <h3 className="tour-title text-2xl font-medium h-[25%] mb-2.5">
+          <h3 className="tour-title text-xl font-medium h-[25%] mb-2.5">
             {tour.title}
           </h3>
           {/* Tour Rating */}

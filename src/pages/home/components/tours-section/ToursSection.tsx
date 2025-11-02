@@ -2,21 +2,30 @@
 import {useState} from "react";
 // Data
 import {toursList} from "../../data/data";
+// Utils
+import {getFilteredTours} from "../../../../utils/filters";
 // Components
 import Title from "../../../../components/common/section-title/Title";
 import Tour from "./Tour";
 import Pagination from "./pagination/Pagination";
+import Filters from "./filters/Filters";
+import {paginate} from "../../../../utils/pagination";
 // Main Component
 const ToursSection = () => {
+  // - - - - - - - - - - - - - - - States
+  // Filters State
+  const [currentFilter, setFilter] = useState("recomended");
   // Pagination State
   const [currentPage, setCurrentPage] = useState(1);
-  // Number Of Cards & Pages
-  const numberOfCards = 4;
-  const numberOfPages = Math.ceil(toursList.length / numberOfCards);
-  // Tours Array
-  const startIndex = (currentPage - 1) * numberOfCards;
-  const finishIndex = currentPage * numberOfCards;
-  const tours = toursList.slice(startIndex, finishIndex);
+  // - - - - - - - - - - - - - - - Logic
+  // Filtering Logic
+  const toursArray = getFilteredTours(currentFilter, toursList);
+  // Pagination Logic
+  const {numberOfPages, tours} = paginate(
+    toursList.length,
+    currentPage,
+    toursArray
+  );
   // Return JSX
   return (
     <>
@@ -24,10 +33,16 @@ const ToursSection = () => {
         <div className="container m-auto max-md:px-2">
           {/* Title */}
           <Title title={"tours"} />
+          {/* Filters */}
+          <Filters
+            tours={toursList.length}
+            currentFilter={currentFilter}
+            setFilter={setFilter}
+          />
           {/* Tour */}
           <div className="tours grid grid-cols-[repeat(auto-fill,minmax(300px,1fr))] gap-10">
             {tours.map((tour) => (
-              <Tour key={tour.id} tour={tour} />
+              <Tour key={tour.id} {...tour} />
             ))}
           </div>
           {/* Pagination */}

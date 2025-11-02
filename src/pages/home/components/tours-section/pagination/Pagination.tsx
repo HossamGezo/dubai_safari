@@ -2,7 +2,7 @@
 import {IoIosArrowDroprightCircle} from "react-icons/io";
 import {IoIosArrowDropleftCircle} from "react-icons/io";
 // Styles
-import "./styles.css";
+import "./pagination.css";
 // Types
 type PaginationType = {
   pages: number;

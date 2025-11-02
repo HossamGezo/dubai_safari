@@ -1,5 +1,5 @@
 // Styles
-import "./styles.css";
+import "./title.css";
 // Types
 type TitleType = {
   title: string;
