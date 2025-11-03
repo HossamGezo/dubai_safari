@@ -14,7 +14,7 @@ A web application for booking safari trips, built with React, TypeScript, and Vi
 *   **Services Section:** Displays the various services and packages offered.
 *   **Banner Section:** An informational or promotional banner.
 *   **Newsletter Section:** A subscription form for the newsletter.
-*   **Header Component:** A fully responsive header with navigation links and logo.
+*   **Header & Footer Components:** Fully responsive header with navigation and a comprehensive footer.
 
 
 ## 🛠️ Tech Stack & Setup
@@ -28,7 +28,7 @@ A web application for booking safari trips, built with React, TypeScript, and Vi
 
 1.  **Clone the repository:**
     ```bash
-    git clone https://github.com/YourUsername/bubai-safari-pro.git
+    git clone https://github.com/YourUsername/dubai-safari-pro.git
     ```
 2.  **Install dependencies:**
     ```bash
