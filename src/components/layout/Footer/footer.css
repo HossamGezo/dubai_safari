@@ -1,0 +1,19 @@
+@import "tailwindcss";
+
+@layer components {
+  .footer h3 {
+    @apply text-2xl text-orange-500 font-bold mb-5;
+  }
+  .footer-support-list-item,
+  .footer-company-list-item {
+    @apply text-lg mb-2 hover:underline cursor-pointer;
+  }
+  .footer-work-desc {
+    @apply text-lg mb-2 hover:underline cursor-pointer;
+  }
+  @media (max-width: 1024px) {
+    .flex-center {
+      @apply flex flex-col items-center justify-center text-center;
+    }
+  }
+}
