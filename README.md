@@ -6,10 +6,10 @@ A web application for booking safari trips, built with React, TypeScript, and Vi
 
 ## ✨ Features
 
-*   **Tours Section (Core Feature):**
+*   **Tours Section & Details Page (Core Feature):**
     *   Built with a scalable and reusable component architecture.
-    *   Displays a paginated list of available tours.
-    *   Includes advanced filtering functionality.
+    *   Displays a paginated and filterable list of available tours.
+    *   Each tour links to a dedicated details page with more information.
 *   **Hero Section:** A visually appealing hero section for the main page.
 *   **Services Section:** Displays the various services and packages offered.
 *   **Banner Section:** An informational or promotional banner.
@@ -21,14 +21,14 @@ A web application for booking safari trips, built with React, TypeScript, and Vi
 
 *   **Framework:** React with TypeScript & Vite
 *   **Styling:** Tailwind CSS
-*   **Routing:** React Router
+*   **Routing:** React Router DOM
 *   **Icons:** React Icons
 
 ## 🚀 How to Run
 
 1.  **Clone the repository:**
     ```bash
-    git clone https://github.com/YourUsername/dubai-safari-pro.git
+    git clone https://github.com/HossamGezo/dubai_safari.git
     ```
 2.  **Install dependencies:**
     ```bash
