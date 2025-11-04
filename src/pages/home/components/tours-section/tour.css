@@ -1,0 +1,13 @@
+.tour-box:hover .icon-animation {
+  animation: arrow-move 1.25s ease-in-out infinite;
+}
+
+@keyframes arrow-move {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(7px);
+  }
+}

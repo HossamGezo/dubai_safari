@@ -7,6 +7,7 @@ import About from "../pages/about/About";
 import Login from "../pages/login/Login";
 import Register from "../pages/register/Register";
 import Error from "../pages/error/Error";
+import TourDetailsPage from "../pages/tour-details/TourDetailsPage";
 // App Routes
 const router = createBrowserRouter([
   {
@@ -15,6 +16,10 @@ const router = createBrowserRouter([
     errorElement: <Error />,
     children: [
       {index: true, Component: Home},
+      {
+        path: "tour/:id",
+        Component: TourDetailsPage,
+      },
       {
         path: "about",
         Component: About,
