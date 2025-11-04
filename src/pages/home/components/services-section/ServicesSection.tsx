@@ -36,7 +36,7 @@ const ServicesSection = () => (
       {/* Title */}
       <Title title={"services"} />
       {/* Service */}
-      <div className="services-wrapper grid grid-cols-[repeat(auto-fill,minmax(300px,1fr))] gap-10">
+      <div className="services-wrapper max-md:px-2 grid grid-cols-[repeat(auto-fill,minmax(300px,1fr))] gap-10">
         {services.map((service) => (
           <Service key={service.id} service={service.service}>
             {service.icon}
