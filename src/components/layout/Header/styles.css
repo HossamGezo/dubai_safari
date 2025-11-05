@@ -1,21 +1,23 @@
 /* Header */
 
-.list {
-  &:hover {
-    color: var(--color-orange);
-  }
-  &:active {
-    color: var(--color-orange-700);
-  }
-  & a {
-    display: flex;
-    align-items: center;
-    gap: 7px;
-    &.active {
-      color: var(--color-orange);
-    }
-  }
-  &-logo {
-    margin-right: 10px;
-  }
+.list:hover {
+  color: var(--color-orange);
+}
+
+.list:active {
+  color: var(--color-orange-700);
+}
+
+.list a.active {
+  color: var(--color-orange);
+}
+
+.list a {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.list-logo {
+  margin-right: 10px;
 }
