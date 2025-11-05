@@ -4,24 +4,32 @@ A web application for booking safari trips, built with React, TypeScript, and Vi
 
 ***
 
+### 🔗 Live Demo
+
+**[https://fancy-gaufre-4776b6.netlify.app/](https://fancy-gaufre-4776b6.netlify.app/)**
+
+***
+
 ## ✨ Features
 
+*   **Authentication:**
+    *   **Login & Register Pages:** User-friendly forms with client-side validation.
+    *   **Reusable Auth Layout:** A consistent layout for all authentication-related pages.
 *   **Core Functionality:**
     *   **Tours Section & Details Page:** Displays a paginated and filterable list of tours, each linking to a dedicated details page.
 *   **Static Pages:**
     *   **About Us Page:** A dedicated page providing information about the company.
 *   **Home Page Sections:**
-    *   **Hero Section:** A visually appealing hero section.
-    *   **Services Section:** Displays the various services offered.
-    *   **Banner & Newsletter Sections:** Promotional and subscription components.
+    *   **Hero, Services, Banner & Newsletter Sections.**
 *   **Layout:**
-    *   **Header & Footer:** Fully responsive and reusable components for navigation and site information.
+    *   **Header & Footer:** Fully responsive and reusable components.
 
 ## 🛠️ Tech Stack & Setup
 
 *   **Framework:** React with TypeScript & Vite
 *   **Styling:** Tailwind CSS
 *   **Routing:** React Router DOM
+*   **Form Handling:** React Hook Form & Zod for validation
 *   **Icons:** React Icons
 
 ## 🚀 How to Run
