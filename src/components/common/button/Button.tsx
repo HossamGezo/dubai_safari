@@ -1,18 +1,23 @@
 // Types
 type ButtonType = {
-  customStyles?: string;
   children: React.ReactNode;
-};
+} & React.ComponentProps<"button">;
 // Main Component
-const Button = ({customStyles, children}: ButtonType) => {
+const Button = ({
+  children,
+  className,
+  type = "button",
+  ...rest
+}: ButtonType) => {
   return (
     <>
       <button
-        type="button"
+        type={type}
+        {...rest}
         className={`
           bg-orange-500 font-bold text-white cursor-pointer
           hover:bg-orange-600 active:bg-orange-500 transition-colors
-          duration-300 rounded-full tracking-wider select-none ${customStyles}
+          duration-300 rounded-full tracking-wider select-none ${className}
         `}
       >
         {children}

@@ -33,7 +33,7 @@ const NewsLetter = () => {
                 className="w-full bg-white px-2.5 max-md:py-2.5 md:py-3 lg:py-4 xl:py-5  border-b-2 outline-0 caret-orange-300 border-b-orange-300 rounded-t-lg"
               />
             </form>
-            <Button customStyles="max-md:w-[100px] w-[150px] max-md:py-1 md:py-2 lg:py-3 ">
+            <Button className="max-md:w-[100px] w-[150px] max-md:py-1 md:py-2 lg:py-3 ">
               Sign Up
             </Button>
           </div>

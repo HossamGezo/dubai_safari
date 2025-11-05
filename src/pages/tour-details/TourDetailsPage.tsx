@@ -5,6 +5,7 @@ import ActivityTour from "./components/ActivityTour";
 import TourPrice from "./components/TourPrice";
 import TourRating from "./components/TourRating";
 import TourImage from "./components/TourImage";
+import Error from "../error/Error";
 // React Router Dom
 import {useParams} from "react-router";
 // Data
@@ -20,7 +21,7 @@ const TourDetailsPage = () => {
   if (!tour) {
     return (
       <div className="text-5xl flex items-center justify-center text-red-700 h-[calc(100vh-99.05px)]">
-        Tour Not Found!
+        <Error />
       </div>
     );
   }

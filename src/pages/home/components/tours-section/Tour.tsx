@@ -60,7 +60,7 @@ const Tour = ({...tour}: ToursListType) => (
         {/* Button */}
         <Link to={`/tour/${tour.id}`}>
           <div className="seemore-btn absolute px-3 w-full bottom-4 left-0 flex items-center justify-between">
-            <Button customStyles="tracking-widest w-[120px] h-[30px] rounded-sm">
+            <Button className="tracking-widest w-[120px] h-[30px] rounded-sm">
               See More
             </Button>
             <FaLongArrowAltRight className="icon-animation text-xl text-orange-800" />
