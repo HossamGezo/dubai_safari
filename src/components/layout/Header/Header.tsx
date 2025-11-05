@@ -3,10 +3,11 @@ import {useState} from "react";
 // React Icons
 import {IoMenu} from "react-icons/io5";
 import {MdOutlineClose} from "react-icons/md";
-import Navbar from "./components/Navbar";
-import Logo from "./components/Logo";
 // Styles
 import "./styles.css";
+// Components
+import Logo from "./components/Logo";
+import Navbar from "./components/Navbar";
 // Main Component
 const Header = () => {
   const [toggle, setToggle] = useState(false);
