@@ -13,12 +13,13 @@ A web application for booking safari trips, built with React, TypeScript, and Vi
 ## ✨ Features
 
 *   **Authentication:**
-    *   **Login & Register Pages:** User-friendly forms with client-side validation.
+    *   **Login & Register Pages:** User-friendly forms with client-side validation using React Hook Form and Zod.
     *   **Reusable Auth Layout:** A consistent layout for all authentication-related pages.
 *   **Core Functionality:**
     *   **Tours Section & Details Page:** Displays a paginated and filterable list of tours, each linking to a dedicated details page.
-*   **Static Pages:**
-    *   **About Us Page:** A dedicated page providing information about the company.
+*   **Static & Utility Pages:**
+    *   **About Us Page:** Provides information about the company.
+    *   **Error Page:** A custom 404 page for handling invalid routes.
 *   **Home Page Sections:**
     *   **Hero, Services, Banner & Newsletter Sections.**
 *   **Layout:**
@@ -30,7 +31,7 @@ A web application for booking safari trips, built with React, TypeScript, and Vi
 *   **Styling:** Tailwind CSS
 *   **Routing:** React Router DOM
 *   **Form Handling:** React Hook Form & Zod for validation
-*   **Icons:** React Icons
+*   *   **Icons:** React Icons
 
 ## 🚀 How to Run
 
