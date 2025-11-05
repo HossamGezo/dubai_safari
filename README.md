@@ -6,7 +6,7 @@ A web application for booking safari trips, built with React, TypeScript, and Vi
 
 ### 🔗 Live Demo
 
-**[https://fancy-gaufre-4776b6.netlify.app/](https://fancy-gaufre-4776b6.netlify.app/)**
+**[https://dubaisafari.netlify.app/](https://dubaisafari.netlify.app/)**
 
 ***
 
@@ -31,7 +31,7 @@ A web application for booking safari trips, built with React, TypeScript, and Vi
 *   **Styling:** Tailwind CSS
 *   **Routing:** React Router DOM
 *   **Form Handling:** React Hook Form & Zod for validation
-*   *   **Icons:** React Icons
+*   **Icons:** React Icons
 
 ## 🚀 How to Run
 
