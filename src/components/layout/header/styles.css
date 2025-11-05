@@ -1,0 +1,21 @@
+/* Header */
+
+.list {
+  &:hover {
+    color: var(--color-orange);
+  }
+  &:active {
+    color: var(--color-orange-700);
+  }
+  & a {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    &.active {
+      color: var(--color-orange);
+    }
+  }
+  &-logo {
+    margin-right: 10px;
+  }
+}
