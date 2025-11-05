@@ -21,7 +21,7 @@ const HeroSection = () => {
                 className="w-full h-full max-md:placeholder:text-[12px] placeholder:text-[18px] placeholder:select-none outline-0 caret-orange"
               />
             </div>
-            <Button customStyles="max-md:mr-0.5 mr-1 max-md:px-0 max-md:py-1 px-7 py-3 w-[150px]">
+            <Button className="max-md:mr-0.5 mr-1 max-md:px-0 max-md:py-1 px-7 py-3 w-[150px]">
               Search
             </Button>
           </div>
