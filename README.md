@@ -6,7 +6,7 @@ A web application for booking safari trips, built with React, TypeScript, and Vi
 
 ### 🔗 Live Demo
 
-**[https://dubaisafari.netlify.app/](https://dubaisafari.netlify.app/)**
+<a href="https://dubaisafari.netlify.app/" target="_blank"><strong>https://dubaisafari.netlify.app/</strong></a>
 
 ***
 
