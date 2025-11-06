@@ -6,7 +6,7 @@ import {MdOutlineClose} from "react-icons/md";
 import Navbar from "./Navbar";
 import Logo from "./Logo";
 // Styles
-import "./styles.css";
+import "./header.css";
 // Main Component
 const Header = () => {
   const [toggle, setToggle] = useState(false);
