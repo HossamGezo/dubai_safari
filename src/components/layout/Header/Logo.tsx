@@ -1,7 +1,7 @@
 // React Router Dom
 import {Link} from "react-router";
 // Images
-import DubaiLogo from "../../../images/logo.png";
+import DubaiLogo from "@/images/logo.png";
 // Types
 type LogoTypes = {
   setToggle: React.Dispatch<React.SetStateAction<boolean>>;

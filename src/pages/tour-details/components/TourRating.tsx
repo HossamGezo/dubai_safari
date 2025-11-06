@@ -1,5 +1,5 @@
 // Components
-import Rating from "../../home/components/tours-section/Rating";
+import Rating from "@/pages/home/components/tours-section/Rating";
 // Main Component
 const TourRating = ({rating, reviews}: {rating: number; reviews: string}) => {
   return (

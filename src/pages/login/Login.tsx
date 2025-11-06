@@ -3,9 +3,9 @@ import {useForm, type SubmitHandler} from "react-hook-form";
 import {zodResolver} from "@hookform/resolvers/zod";
 import {z} from "zod";
 // Components
-import Button from "../../components/common/button/Button";
-import AuthLayout from "../../components/layout/AuthLayout/AuthLayout";
-import InputField from "../../components/common/field/InputField";
+import Button from "@/components/common/button/Button";
+import AuthLayout from "@/components/layout/AuthLayout/AuthLayout";
+import InputField from "@/components/common/field/InputField";
 // Main Component
 const Login = () => {
   // Zod Validation Schema
@@ -53,7 +53,9 @@ const Login = () => {
             register={register}
             error={errors.password?.message}
           />
-          <Button type="submit" className="relative py-2 w-[150px]">login</Button>
+          <Button type="submit" className="relative py-2 w-[150px]">
+            login
+          </Button>
         </form>
       </AuthLayout>
     </>

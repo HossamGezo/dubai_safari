@@ -1,5 +1,5 @@
 // Types
-import type {ToursListType} from "../types";
+import type {ToursListType} from "@/types/index";
 // Main Function
 export const getFilteredTours = (
   currentFilter: string,
