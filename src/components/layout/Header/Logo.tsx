@@ -2,11 +2,18 @@
 import {Link} from "react-router";
 // Images
 import DubaiLogo from "../../../images/logo.png";
-
-const Logo = () => {
+// Types
+type LogoTypes = {
+  setToggle: React.Dispatch<React.SetStateAction<boolean>>;
+};
+const Logo = ({setToggle}: LogoTypes) => {
   return (
     <div className="logo -ml-5">
-      <Link to="/" className="flex items-center">
+      <Link
+        to="/"
+        className="flex items-center"
+        onClick={() => setToggle(false)}
+      >
         <img
           src={DubaiLogo}
           alt="IMAGE"

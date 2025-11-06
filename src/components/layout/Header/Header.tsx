@@ -14,7 +14,7 @@ const Header = () => {
     <>
       <header className="header bg-white ">
         <div className="container m-auto flex items-center justify-between px-5 py-1 relative">
-          <Logo />
+          <Logo setToggle={setToggle}/>
           <Navbar toggle={toggle} setToggle={setToggle} />
           {/* Header Menu */}
           <div

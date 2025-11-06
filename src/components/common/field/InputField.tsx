@@ -7,7 +7,7 @@ type InputFieldProps<T extends FieldValues> = {
   name: Path<T>;
   register: UseFormRegister<T>;
   error?: string;
-};
+} & React.ComponentProps<"input">;
 // Main Component
 const InputField = <T extends FieldValues>({
   type,
@@ -15,14 +15,20 @@ const InputField = <T extends FieldValues>({
   name,
   register,
   error,
+  className,
 }: InputFieldProps<T>) => {
+  const customStyles = className;
   return (
     <div className="flex flex-col gap-1">
       <input
         type={type}
         placeholder={placeholder}
         {...register(name)}
-        className="bg-white max-md:w-[250px] w-[350px] h-[50px] px-2.5 rounded-sm outline-0 caret-orange-500"
+        className={
+          customStyles
+            ? customStyles
+            : "bg-white max-md:w-[250px] w-[350px] h-[50px] px-2.5 rounded-sm outline-0 caret-orange-500"
+        }
       />
       {error && <span className="text-red-400 text-sm">{error}</span>}
     </div>

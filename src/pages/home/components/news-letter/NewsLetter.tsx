@@ -1,6 +1,6 @@
 // Images
-import Button from "../../../../components/common/button/Button";
 import newsLetterImage from "../../../../images/newsletterimage.jpg";
+import NewsLetterForm from "./components/NewsLetterForm";
 // Main Component
 const NewsLetter = () => {
   return (
@@ -26,16 +26,7 @@ const NewsLetter = () => {
               experiences in Dubai, straight to your inbox.
             </p>
             {/* News Letter Inbox Form */}
-            <form className="news-letter-form w-full">
-              <input
-                type="text"
-                placeholder="Your Email"
-                className="w-full bg-white px-2.5 max-md:py-2.5 md:py-3 lg:py-4 xl:py-5  border-b-2 outline-0 caret-orange-300 border-b-orange-300 rounded-t-lg"
-              />
-            </form>
-            <Button className="max-md:w-[100px] w-[150px] max-md:py-1 md:py-2 lg:py-3 ">
-              Sign Up
-            </Button>
+            <NewsLetterForm/>
           </div>
         </div>
       </section>

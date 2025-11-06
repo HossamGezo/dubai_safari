@@ -37,12 +37,12 @@ const Navbar = ({toggle, setToggle}: NavbarTypes) => {
           toggle
             ? "max-md:[clip-path:polygon(0_0,100%_0,100%_100%,0_100%)]"
             : "max-md:[clip-path:polygon(0_0,100%_0,100%_0,0_0)]"
-        } max-md:absolute max-md:top-full max-md:right-0 max-md:w-full 
+        } max-md:absolute max-md:top-[calc(100%-0.5px)] max-md:right-0 max-md:w-full z-50
         max-md:p-5 max-md:bg-white max-md:transition-clip-path max-md:duration-500 max-md:ease-in-out
         md:relative md:top-auto md:right-auto md:w-auto md:p-0 md:bg-transparent md:[clip-path:none]
       `}
     >
-      <ul className="navbar-list flex gap-7 font-bold text-[18px] max-md:flex-col max-md:gap-5">
+      <ul className="navbar-list flex max-md:flex-col flex-row gap-7 font-bold text-[18px] max-md:gap-5">
         <li className="list" onClick={() => setToggle(false)}>
           <NavLink to="/">
             <FaHome />

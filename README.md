@@ -18,10 +18,11 @@ A web application for booking safari trips, built with React, TypeScript, and Vi
 *   **Core Functionality:**
     *   **Tours Section & Details Page:** Displays a paginated and filterable list of tours, each linking to a dedicated details page.
 *   **Static & Utility Pages:**
-    *   **About Us Page:** Provides information about the company.
+    *   **About Us Page:** A responsive page providing information about the company.
     *   **Error Page:** A custom 404 page for handling invalid routes.
 *   **Home Page Sections:**
-    *   **Hero, Services, Banner & Newsletter Sections.**
+    *   **Hero, Services, & Banner Sections.**
+    *   **Newsletter Section:** Includes client-side validation for the subscription form.
 *   **Layout:**
     *   **Header & Footer:** Fully responsive and reusable components.
 
