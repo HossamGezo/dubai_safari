@@ -1,6 +1,12 @@
 # Bubai Safari Project 🐪
 
-A web application for booking safari trips, built with React, TypeScript, and Vite. This project is a learning exercise to practice modern web development and professional Git workflows.
+<div style="text-align: center;">
+  <a href="assets/images/screenshot.jpg" target="_blank">
+    <img src="assets/images/screenshot.jpg" alt="Dubai Safari Project Screenshot" width="800"/>
+  </a>
+</div>
+
+A web application for booking safari trips, built with React, TypeScript, and Vite. This project is a learning exercise to practice modern web development, professional Git workflows, and code quality best practices.
 
 ***
 
@@ -12,6 +18,9 @@ A web application for booking safari trips, built with React, TypeScript, and Vi
 
 ## ✨ Features
 
+*   **Code Quality & Refactoring:**
+    *   Implemented absolute import paths (`@/components`, etc.) for better readability and maintainability.
+    *   Standardized CSS naming conventions and component structure.
 *   **Authentication:**
     *   **Login & Register Pages:** User-friendly forms with client-side validation using React Hook Form and Zod.
     *   **Reusable Auth Layout:** A consistent layout for all authentication-related pages.
@@ -21,8 +30,7 @@ A web application for booking safari trips, built with React, TypeScript, and Vi
     *   **About Us Page:** A responsive page providing information about the company.
     *   **Error Page:** A custom 404 page for handling invalid routes.
 *   **Home Page Sections:**
-    *   **Hero, Services, & Banner Sections.**
-    *   **Newsletter Section:** Includes client-side validation for the subscription form.
+    *   **Hero, Services, Banner & Newsletter Sections** (with validation).
 *   **Layout:**
     *   **Header & Footer:** Fully responsive and reusable components.
 
