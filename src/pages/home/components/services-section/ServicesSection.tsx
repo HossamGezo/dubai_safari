@@ -5,7 +5,7 @@ import {FaCity} from "react-icons/fa6";
 import {TbWorld} from "react-icons/tb";
 // Components
 import Service from "./Service";
-import Title from "../../../../components/common/section-title/Title";
+import Title from "@/components/common/section-title/Title";
 // Services Array
 const services = [
   {

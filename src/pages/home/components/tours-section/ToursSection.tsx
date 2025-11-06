@@ -1,15 +1,15 @@
 // React
 import {useState} from "react";
 // Data
-import {toursList} from "../../data/data";
+import {toursList} from "@/pages/home/data/data";
 // Utils
-import {getFilteredTours} from "../../../../utils/filters";
+import {getFilteredTours} from "@/utils/filters";
 // Components
-import Title from "../../../../components/common/section-title/Title";
+import Title from "@/components/common/section-title/Title";
 import Tour from "./Tour";
 import Pagination from "./pagination/Pagination";
 import Filters from "./filters/Filters";
-import {paginate} from "../../../../utils/pagination";
+import {paginate} from "@/utils/pagination";
 // Main Component
 const ToursSection = () => {
   // - - - - - - - - - - - - - - - States

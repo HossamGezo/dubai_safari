@@ -1,6 +1,6 @@
 // Data
-import {languages, currencies} from "../../../../pages/home/data/data";
-import SelectBox from "../../../common/select-box/SelectBox";
+import { languages, currencies } from "@/pages/home/data/data";
+import SelectBox from "@/components/common/select-box/SelectBox";
 // Main Component
 const LanguageCurrency = () => {
   return (

@@ -1,5 +1,5 @@
 // Images
-import newsLetterImage from "../../../../images/newsletterimage.jpg";
+import newsLetterImage from "@/images/newsletterimage.jpg";
 import NewsLetterForm from "./components/NewsLetterForm";
 // Main Component
 const NewsLetter = () => {

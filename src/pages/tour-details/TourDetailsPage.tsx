@@ -5,11 +5,11 @@ import ActivityTour from "./components/ActivityTour";
 import TourPrice from "./components/TourPrice";
 import TourRating from "./components/TourRating";
 import TourImage from "./components/TourImage";
-import Error from "../error/Error";
+import Error from "@/pages/error/Error";
 // React Router Dom
 import {useParams} from "react-router";
 // Data
-import {toursList} from "../home/data/data";
+import {toursList} from "@/pages/home/data/data";
 // Main Component
 const TourDetailsPage = () => {
   const {id} = useParams();

@@ -3,9 +3,9 @@ import {useForm, type SubmitHandler} from "react-hook-form";
 import {zodResolver} from "@hookform/resolvers/zod";
 import {z} from "zod";
 // Components
-import Button from "../../components/common/button/Button";
-import AuthLayout from "../../components/layout/AuthLayout/AuthLayout";
-import InputField from "../../components/common/field/InputField";
+import Button from "@/components/common/button/Button";
+import AuthLayout from "@/components/layout/AuthLayout/AuthLayout";
+import InputField from "@/components/common/field/InputField";
 // Main Component
 const Register = () => {
   // Zod Validation Schema

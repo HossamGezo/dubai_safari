@@ -1,5 +1,5 @@
 // Project Components
-import Button from "../../../../components/common/button/Button";
+import Button from "@/components/common/button/Button";
 // React Icons
 import {IoIosSearch} from "react-icons/io";
 // Main Component

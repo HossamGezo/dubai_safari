@@ -3,8 +3,8 @@ import {useForm, type SubmitHandler} from "react-hook-form";
 import {zodResolver} from "@hookform/resolvers/zod";
 import {z} from "zod";
 // Components
-import Button from "../../../../../components/common/button/Button";
-import InputField from "../../../../../components/common/field/InputField";
+import Button from "@/components/common/button/Button";
+import InputField from "@/components/common/field/InputField";
 // Zod Validation
 const inboxSchema = z.object({
   email: z.string().includes("@", {message: "Invalid Email"}).trim(),

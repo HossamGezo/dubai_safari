@@ -1,5 +1,5 @@
 // Components
-import Button from "../../../../components/common/button/Button";
+import Button from "@/components/common/button/Button";
 import Rating from "./Rating";
 // React Icons
 import {FaLongArrowAltRight} from "react-icons/fa";
@@ -8,7 +8,7 @@ import {Link} from "react-router";
 // Styles
 import "./tour.css";
 // Types
-import type {ToursListType} from "../../../../types";
+import type { ToursListType } from "@/types/index";
 // Main Component
 const Tour = ({...tour}: ToursListType) => (
   <>
