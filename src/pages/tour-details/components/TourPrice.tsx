@@ -1,5 +1,7 @@
 // React Icons
 import {TbCalendarEvent} from "react-icons/tb";
+// Custom Functions
+import currencyFormat from "@/utils/formatCurrency";
 // Main Component
 const TourPrice = ({priceFrom}: {priceFrom: number}) => {
   return (
@@ -15,7 +17,7 @@ const TourPrice = ({priceFrom}: {priceFrom: number}) => {
           <div className="tour-price flex items-center gap-10 my-5">
             <div className="tour-price-person">
               <span className="price block text-[32px] text-red-500">
-                ${priceFrom}
+                {currencyFormat(priceFrom)}
               </span>
               per person
             </div>

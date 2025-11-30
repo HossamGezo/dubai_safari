@@ -3,12 +3,14 @@ import Button from "@/components/common/button/Button";
 import Rating from "./Rating";
 // React Icons
 import {FaLongArrowAltRight} from "react-icons/fa";
-// React Router Dom
+// React Router
 import {Link} from "react-router";
+// Custom Functions
+import currencyFormat from "@/utils/formatCurrency";
 // Styles
 import "./tour.css";
 // Types
-import type { ToursListType } from "@/types/index";
+import type {ToursListType} from "@/types/index";
 // Main Component
 const Tour = ({...tour}: ToursListType) => (
   <>
@@ -52,7 +54,7 @@ const Tour = ({...tour}: ToursListType) => (
           <span className="price-tag flex items-center gap-3">
             From
             <span className="text-xl text-orange-800 font-bold">
-              ${tour.priceFrom}
+              {currencyFormat(tour.priceFrom)}
             </span>
             / per person
           </span>
