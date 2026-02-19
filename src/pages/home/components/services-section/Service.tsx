@@ -1,15 +1,17 @@
 // Types
-type ServicesSectionType = {
+type ServicesSectionProps = {
   service: string;
   children: React.ReactNode;
 };
-const Service = ({service, children}: ServicesSectionType) => {
+
+// Main Component
+const Service = ({ service, children }: ServicesSectionProps) => {
   return (
-    <div className="service lc-flex-between group rounded-full px-7 py-2.5 border border-orange-500 cursor-pointer font-bold hover:bg-orange-500 hover:text-white transition-colors duration-300 gap-2.5">
-      <span className="icon text-orange-700 max-md:text-lg md:text-2xl group-hover:text-white transition-colors duration-300">
+    <div className="flex items-center justify-between group rounded-full px-7 py-2.5 border border-orange-500 cursor-pointer font-bold hover:bg-orange-500 hover:text-white transition-colors duration-300 gap-2.5">
+      <span className="text-orange-700 max-md:text-lg md:text-2xl group-hover:text-white transition-colors duration-300">
         {children}
       </span>
-      <p className="service-desc max-md:text-lg md:text-xl">{service}</p>
+      <p className="max-md:text-lg md:text-xl">{service}</p>
     </div>
   );
 };
