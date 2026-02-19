@@ -1,5 +1,4 @@
-// Tours List Type
-export type ToursListType = {
+export type TourType = {
   id: number;
   title: string;
   duration: string;

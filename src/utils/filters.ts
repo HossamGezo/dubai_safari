@@ -1,15 +1,18 @@
 // Types
-import type {ToursListType} from "@/types/index";
+import type { TourType } from "@/types/tour.types";
 // Main Function
 export const getFilteredTours = (
   currentFilter: string,
-  toursList: ToursListType[]
-): ToursListType[] => {
-  const toursArray =
-    currentFilter === "recomended"
-      ? toursList.sort((a, b) => b.rating - a.rating)
-      : currentFilter === "low"
-      ? toursList.sort((a, b) => a.priceFrom - b.priceFrom)
-      : toursList.sort((a, b) => b.priceFrom - a.priceFrom);
-  return toursArray;
+  toursList: TourType[],
+): TourType[] => {
+  switch (currentFilter) {
+    case "recommended":
+      return toursList.toSorted((a, b) => b.rating - a.rating);
+    case "low":
+      return toursList.toSorted((a, b) => a.priceFrom - b.priceFrom);
+    case "high":
+      return toursList.toSorted((a, b) => b.priceFrom - a.priceFrom);
+    default:
+      return toursList;
+  }
 };
