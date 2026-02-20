@@ -15,6 +15,7 @@ import { toursList } from "src/data/data";
 // Main Component
 const TourDetailsPage = () => {
   const { id } = useParams();
+
   // Tour Logic
   const tour = useMemo(() => {
     return toursList.find((tour) => tour.id === Number(id));
@@ -42,15 +43,16 @@ const TourDetailsPage = () => {
       <div className="max-sm:text-lg text-3xl text-orange-800 font-medium">
         Dubai : {title}
       </div>
+
       {/* Tour Rating */}
       <TourRating rating={rating} reviews={reviews} />
+
       {/* Image Price Wrapper */}
       <div className="flex gap-3.5 max-lg:flex-col justify-between mb-3.5">
-        {/* Image */}
         <TourImage image={image} />
-        {/* Price */}
         <TourPrice priceFrom={priceFrom} />
       </div>
+
       {/* Tour Activity */}
       <ActivityTour duration={duration} />
     </section>
