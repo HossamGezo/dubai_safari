@@ -8,15 +8,10 @@ import NewsLetter from "./components/news-letter/NewsLetter";
 const Home = () => {
   return (
     <>
-      {/* Hero Section */}
       <HeroSection />
-      {/* Services Section */}
       <ServicesSection />
-      {/* Tours Section */}
       <ToursSection />
-      {/* Banner Section */}
       <Banner />
-      {/* News Letter Section */}
       <NewsLetter />
     </>
   );

@@ -1,11 +1,11 @@
-const USD_FORMATTER = new Intl.NumberFormat("en-US", {
-  currency: "USD",
-  style: "currency",
-});
-
-const currencyFormat = (value: number | string | undefined | null) => {
+export const formatCurrency = (
+  value: number | string | undefined | null,
+  currency: string = "USD",
+) => {
   const amount = Number(value) || 0;
-  return USD_FORMATTER.format(amount);
-};
 
-export default currencyFormat;
+  return new Intl.NumberFormat("en-US", {
+    style: "currency",
+    currency: currency,
+  }).format(amount);
+};

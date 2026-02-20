@@ -1,16 +1,14 @@
 // Styles
 import "./title.css";
+
 // Types
-type TitleType = {
+type TitleProps = {
   title: string;
 };
+
 // Main Component
-const Title = ({title}: TitleType) => {
-  return (
-    <>
-      <div className="title">{title}</div>
-    </>
-  );
+const Title = ({ title }: TitleProps) => {
+  return <h2 className="title">{title}</h2>;
 };
 
 export default Title;

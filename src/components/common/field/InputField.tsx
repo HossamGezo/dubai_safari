@@ -1,5 +1,9 @@
-// React Hook Form
-import type {Path, UseFormRegister, FieldValues} from "react-hook-form";
+// Libraries
+import type { Path, UseFormRegister, FieldValues } from "react-hook-form";
+
+// Utils
+import { cn } from "@/utils/cn";
+
 // Types
 type InputFieldProps<T extends FieldValues> = {
   type: "text" | "email" | "password";
@@ -8,6 +12,7 @@ type InputFieldProps<T extends FieldValues> = {
   register: UseFormRegister<T>;
   error?: string;
 } & React.ComponentProps<"input">;
+
 // Main Component
 const InputField = <T extends FieldValues>({
   type,
@@ -17,21 +22,21 @@ const InputField = <T extends FieldValues>({
   error,
   className,
 }: InputFieldProps<T>) => {
-  const customStyles = className;
   return (
-    <div className="flex flex-col gap-1">
+    <>
       <input
         type={type}
         placeholder={placeholder}
         {...register(name)}
-        className={
-          customStyles
-            ? customStyles
-            : "bg-white max-md:w-[250px] w-[350px] h-[50px] px-2.5 rounded-sm outline-0 caret-orange-500"
-        }
+        className={cn(
+          "bg-white w-full md:w-87.5 h-12.5 px-2.5 rounded-sm outline-0 caret-orange-500",
+          className,
+        )}
       />
-      {error && <span className="text-red-400 text-sm">{error}</span>}
-    </div>
+      <div>
+        {error && <span className="text-red-400 text-sm">{error}</span>}
+      </div>
+    </>
   );
 };
 

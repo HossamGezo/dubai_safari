@@ -1,17 +1,29 @@
+// Libraries
+import { Link } from "react-router";
+
+// Main Component
 const Support = () => {
   return (
-    <>
-      <div className="footer-support flex-center">
-        <h3 className="footer-support-head">Support</h3>
-        <ul className="footer-support-list">
-          <li className="footer-support-list-item">Contact</li>
-          <li className="footer-support-list-item">Legal Notice</li>
-          <li className="footer-support-list-item">Privacy Policy</li>
-          <li className="footer-support-list-item">General Terms</li>
-          <li className="footer-support-list-item">Sitemap</li>
-        </ul>
-      </div>
-    </>
+    <div className="flex-center">
+      <h3>Support</h3>
+      <ul>
+        <li className="footer-support-list-item">
+          <Link to="#">Contact</Link>
+        </li>
+        <li className="footer-support-list-item">
+          <Link to="#">Legal Notice</Link>
+        </li>
+        <li className="footer-support-list-item">
+          <Link to="#">Privacy Policy</Link>
+        </li>
+        <li className="footer-support-list-item">
+          <Link to="#">General Terms</Link>
+        </li>
+        <li className="footer-support-list-item">
+          <Link to="#">Sitemap</Link>
+        </li>
+      </ul>
+    </div>
   );
 };
 

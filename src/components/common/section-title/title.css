@@ -3,7 +3,7 @@
 @layer components {
   .title {
     /* Title Styles */
-    @apply relative w-[230px] text-[24px] text-center font-bold uppercase mb-20 py-0.5 mx-auto select-none border-3 border-[#333] z-10;
+    @apply relative w-57.5 text-[24px] text-center font-bold uppercase mb-20 py-0.5 mx-auto select-none border-3 border-[#333] z-10;
     &:hover {
       @apply text-white border-orange-800 delay-500;
     }

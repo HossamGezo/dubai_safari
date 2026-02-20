@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap");
 @import "tailwindcss";
 
 @theme {
@@ -9,48 +10,12 @@
   --breakpoint-xxl: 1320px;
   /* Colors */
   --color-orange: rgb(248, 70, 11);
-  --color-primary-text-color: #222821;
+  --color-secondary: #222821;
   /* Fonts */
   --font-jetbrains: "JetBrains Mono", "monospace";
 }
 
-/* Body */
-
 body {
-  color: var(--color-primary-text-color);
+  color: var(--color-secondary);
   background-color: #f1f5f9;
-}
-
-/* Custom Scrollbar */
-::-webkit-scrollbar {
-  width: 10px;
-}
-::-webkit-scrollbar-track {
-  background: var(--color-orange-100);
-}
-::-webkit-scrollbar-thumb {
-  background: var(--color-orange-800);
-}
-::-webkit-scrollbar-thumb:hover {
-  background: var(--color-orange-700);
-}
-
-/* Global Classes */
-
-.lc-flex-center {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.lc-flex-between {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.lc-flex-around {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
 }
