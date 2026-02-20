@@ -36,7 +36,7 @@ const Navbar = ({ isMenuOpen, setIsMenuOpen }: NavbarProps) => {
   return (
     <nav
       className={cn(
-        "max-md:absolute max-md:top-[calc(100%-0.5px)] max-md:right-0 max-md:w-full z-50 max-md:p-5 max-md:bg-white max-md:transition-[clip-path] max-md:duration-500 max-md:ease-in-out md:relative md:top-auto md:right-auto md:w-auto md:p-0 md:bg-transparent md:[clip-path:none]",
+        "max-md:absolute max-md:top-[calc(100%-0.5px)] max-md:right-0 max-md:w-full z-9999 max-md:p-5 max-md:bg-white max-md:transition-[clip-path] max-md:duration-500 max-md:ease-in-out md:relative md:top-auto md:right-auto md:w-auto md:p-0 md:bg-transparent md:[clip-path:none]",
         isMenuOpen
           ? "max-md:[clip-path:polygon(0_0,100%_0,100%_100%,0_100%)]"
           : "max-md:[clip-path:polygon(0_0,100%_0,100%_0,0_0)]",
