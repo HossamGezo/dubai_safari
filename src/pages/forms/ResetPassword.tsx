@@ -38,7 +38,7 @@ const ResetPassword = () => {
   return (
     <AuthLayout>
       <h1 className="text-2xl md:text-3xl font-extrabold text-orange-500 select-none mb-5 tracking-wider text-shadow-2xs text-shadow-orange-800 z-50">
-        Enter your Email
+        Enter your email
       </h1>
       <form
         onSubmit={handleSubmit(onSubmit)}
