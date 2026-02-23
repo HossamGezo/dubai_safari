@@ -1,3 +1,6 @@
+// Libraries
+import { useNavigate } from "react-router";
+
 // React Icons
 import { TbCalendarEvent } from "react-icons/tb";
 
@@ -9,8 +12,11 @@ type TourPriceProps = { priceFrom: number };
 
 // Main Component
 const TourPrice = ({ priceFrom }: TourPriceProps) => {
+  const navigate = useNavigate();
+
+  // Return JSX
   return (
-    <div className="bg-white border border-gray-300 rounded-lg max-lg:w-full w-125 h-fit overflow-hidden">
+    <div className="bg-white border shadow-xl border-gray-300 rounded-lg max-xl:w-full w-125 h-fit overflow-hidden">
       <div className="text-right h-17.5 p-2.5 bg-linear-to-b from-pink-200 to-white text-2xl text-pink-800">
         Save up to 35%
       </div>
@@ -25,7 +31,11 @@ const TourPrice = ({ priceFrom }: TourPriceProps) => {
             </span>
             per person
           </div>
-          <button className="w-50 h-10 rounded-lg bg-blue-400 hover:bg-blue-500 active:bg-blue-400 duration-75 cursor-pointer text-lg font-bold text-white">
+          <button
+            type="button"
+            className="w-50 h-10 rounded-lg bg-blue-400 hover:bg-blue-500 active:bg-blue-400 duration-75 cursor-pointer text-lg font-bold text-white"
+            onClick={() => navigate("/login")}
+          >
             Book Now
           </button>
         </div>

@@ -10,7 +10,7 @@ const TourImage = ({ image }: TourImageProps) => {
       <img
         src={image}
         alt="Tour Preview"
-        className="mb-2.5 rounded-lg max-lg:w-full w-200 object-cover"
+        className="mb-2.5 rounded-lg max-xl:w-full w-200 object-cover shadow-xl"
       />
       <p className="max-lg:w-full w-175 text-lg text-justify">
         Discover a different side of Dubai on a fun-filled safari across the

@@ -33,7 +33,7 @@ const TourDetailsPage = () => {
 
   // Return JSX
   return (
-    <section className="bg-[#ECECEC] max-sm:px-2 max-sm:py-5 p-5">
+    <section className="container mx-auto sm:my-10 sm:rounded-lg bg-[#ECECEC]/60 max-sm:px-2 max-sm:py-5 p-5">
       <div className="max-sm:text-[13px] text-lg text-gray-500 mb-2.5">
         United Arab Emirates &gt; Things to do in Dubai &gt; Safari
       </div>
@@ -48,7 +48,7 @@ const TourDetailsPage = () => {
       <TourRating rating={rating} reviews={reviews} />
 
       {/* Image Price Wrapper */}
-      <div className="flex gap-3.5 max-lg:flex-col justify-between mb-3.5">
+      <div className="flex gap-3.5 max-xl:flex-col-reverse justify-between mb-3.5">
         <TourImage image={image} />
         <TourPrice priceFrom={priceFrom} />
       </div>
