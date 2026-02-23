@@ -20,6 +20,7 @@ const Header = () => {
         <Navbar isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} />
         {/* Header Menu */}
         <button
+          type="button"
           aria-label="Toggle Menu"
           className="block md:hidden"
           onClick={() => setIsMenuOpen((prev) => !prev)}

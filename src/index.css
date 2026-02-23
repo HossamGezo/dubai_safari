@@ -15,6 +15,10 @@
   --font-jetbrains: "JetBrains Mono", "monospace";
 }
 
+html {
+  @apply scroll-smooth;
+}
+
 body {
   color: var(--color-secondary);
   background-color: #f1f5f9;
