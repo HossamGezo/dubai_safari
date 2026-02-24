@@ -5,13 +5,13 @@ import { createBrowserRouter, RouterProvider } from "react-router";
 // Components
 import MainLayout from "@/layouts/MainLayout";
 import Home from "@/pages/home/Home";
+import NotFound from "@/pages/error/NotFound";
 
 // Lazy Loading Pages
 const TourDetailsPage = React.lazy(
   () => import("@/pages/tour-details/TourDetailsPage"),
 );
 const About = React.lazy(() => import("@/pages/about/About"));
-const Error = React.lazy(() => import("@/pages/error/Error"));
 const Login = React.lazy(() => import("@/pages/forms/Login"));
 const Register = React.lazy(() => import("@/pages/forms/Register"));
 const ResetPassword = React.lazy(() => import("@/pages/forms/ResetPassword"));
@@ -45,7 +45,7 @@ const router = createBrowserRouter([
       },
       {
         path: "*",
-        Component: Error,
+        Component: NotFound,
       },
     ],
   },

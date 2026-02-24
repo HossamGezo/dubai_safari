@@ -2,8 +2,8 @@
 import { Suspense } from "react";
 import { Outlet } from "react-router";
 // Components
-import Footer from "@/components/layout/Footer/Footer";
-import Header from "@/components/layout/Header/Header";
+import Footer from "@/components/layout/temp-footer/Footer";
+import Header from "@/components/layout/temp-header/Header";
 import ScrollToTop from "@/components/common/scroll-to-top/ScrollToTop";
 import Spinner from "@/components/common/spinner/Spinner";
 
