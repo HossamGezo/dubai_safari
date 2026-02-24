@@ -7,7 +7,7 @@ import ActivityTour from "./components/ActivityTour";
 import TourPrice from "./components/TourPrice";
 import TourRating from "./components/TourRating";
 import TourImage from "./components/TourImage";
-import Error from "@/pages/error/Error";
+import Error from "@/pages/error/NotFound";
 
 // Data
 import { toursList } from "src/data/data";
