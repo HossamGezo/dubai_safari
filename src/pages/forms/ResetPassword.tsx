@@ -6,7 +6,7 @@ import { z } from "zod";
 
 // Components
 import Button from "@/components/common/button/Button";
-import AuthLayout from "@/components/layout/temp-auth-layout/AuthLayout";
+import AuthLayout from "@/components/layout/auth-layout/AuthLayout";
 import InputField from "@/components/common/field/InputField";
 
 // Zod Validation Schema
