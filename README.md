@@ -22,7 +22,9 @@
 ---
 
 <div align="center">
-  <img src="assets/dubai-ui.png" alt="Dubai Safari UI" width="900" style="border-radius: 10px; box-shadow: 0 4px 12px rgba(0,0,0,0.15);"/>
+  <a href="https://dubaisafari.netlify.app/" target="_blank">
+    <img src="assets/dubai-ui.png" alt="Dubai Safari UI" width="900" style="border-radius: 10px; box-shadow: 0 4px 12px rgba(0,0,0,0.15); cursor: pointer;"/>
+  </a>
 </div>
 
 ---
