@@ -24,7 +24,7 @@ const ResetPassword = () => {
     reset,
     formState: { errors },
   } = useForm<ResetPasswordSchemaType>({
-    mode: "onChange",
+    mode: "onBlur",
     resolver: zodResolver(ResetPasswordSchema),
   });
 

@@ -2,62 +2,65 @@
 
 <div align="center">
 
-[![Live Demo](https://img.shields.io/badge/DEMO-VIEW_LIVE-brightgreen?style=for-the-badge&logo=netlify)](https://dubaisafari.netlify.app/)
-
-![Netlify Status](https://api.netlify.com/api/v1/badges/513eec13-ddd1-4e84-bb6e-021ec19fe0a4/deploy-status?style=flat)
-![React](https://img.shields.io/badge/React-19-20232A?style=flat&logo=react)
+![React](https://img.shields.io/badge/React_19-%2320232a?style=flat&logo=react)
 ![TypeScript](https://img.shields.io/badge/TypeScript-5-3178C6?style=flat&logo=typescript)
-![TailwindCSS](https://img.shields.io/badge/TailwindCSS-4-06B6D4?style=flat&logo=tailwindcss)
-![Vite](https://img.shields.io/badge/Vite-6-646CFF?style=flat&logo=vite)
+![TailwindCSS](https://img.shields.io/badge/Tailwind_4-38B2AC?style=flat&logo=tailwind-css)
+![Zod](https://img.shields.io/badge/Zod-3E67B1?style=flat&logo=zod&logoColor=white)
+![ReactRouter](https://img.shields.io/badge/React_Router_7-CA4245?style=flat&logo=react-router)
+![Vite](https://img.shields.io/badge/Vite_6-646CFF?style=flat&logo=vite)
+
+<br />
+
+[**🌐 Live Demo**](https://dubaisafari.netlify.app/) | [**💻 GitHub Repository**](https://github.com/HossamGezo/dubai_safari)
 
 </div>
 
 ---
 
-### 🔗 Quick Links
+## 🌟 Overview
 
-- **🚀 Live Website:** [https://dubaisafari.netlify.app/](https://dubaisafari.netlify.app/)
-- **💻 GitHub Repository:** [https://github.com/HossamGezo/dubai_safari](https://github.com/HossamGezo/dubai_safari)
-
----
-
-<div align="center">
-  <a href="https://dubaisafari.netlify.app/" target="_blank">
-    <img src="assets/dubai-ui.png" alt="Dubai Safari UI" width="900" style="border-radius: 10px; box-shadow: 0 4px 12px rgba(0,0,0,0.15); cursor: pointer;"/>
-  </a>
-</div>
+A high-performance booking platform engineered with **React 19** and **Tailwind CSS 4.0**. This project showcases an **Atomic Component Architecture**, focusing on highly reusable UI logic, strict type-safety via **TypeScript**, and seamless form management using **React Hook Form** and **Zod**.
 
 ---
 
-## 🛠️ Tech Stack & Tools
+## 📸 Visual Journey
 
-| Core Architecture                                                                                       | Form Handling                                                                                            | Styling & UI                                                                                             | Performance                                                                                                 |
-| :------------------------------------------------------------------------------------------------------ | :------------------------------------------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------- | :---------------------------------------------------------------------------------------------------------- |
-| ![React](https://img.shields.io/badge/React_19-%2320232a.svg?style=flat&logo=react&logoColor=%2361DAFB) | ![HookForm](https://img.shields.io/badge/Hook_Form-EC5990?style=flat&logo=reacthookform&logoColor=white) | ![Tailwind](https://img.shields.io/badge/Tailwind_4-38B2AC?style=flat&logo=tailwind-css&logoColor=white) | ![Lazy](https://img.shields.io/badge/Lazy_Loading-563D7C?style=flat)                                        |
-| ![TS](https://img.shields.io/badge/TypeScript-3178C6?style=flat&logo=typescript&logoColor=white)        | ![Zod](https://img.shields.io/badge/Zod_Validation-3E67B1?style=flat&logo=zod&logoColor=white)           | ![Icons](https://img.shields.io/badge/React_Icons-eb5757?style=flat&logo=react)                          | ![Memo](https://img.shields.io/badge/useMemo-Optimized-449444?style=flat)                                   |
-| ![Vite](https://img.shields.io/badge/Vite_6-646CFF?style=flat&logo=vite&logoColor=white)                | ![Netlify](https://img.shields.io/badge/Netlify_Deploy-00C7B7?style=flat&logo=netlify&logoColor=white)   | ![Layout](https://img.shields.io/badge/Flexbox_Grid-E34F26?style=flat)                                   | ![ModernJS](https://img.shields.io/badge/ESNext_toSorted-F7DF1E?style=flat&logo=javascript&logoColor=black) |
+### 🖥️ Desktop Experience
+
+|            Main Storefront Experience             |         Advanced Discovery & Filtering          |
+| :-----------------------------------------------: | :---------------------------------------------: |
+| <img src="assets/desktop-hero.png" width="450" /> | <img src="assets/tours-grid.png" width="450" /> |
+
+|                Auth Validation (Zod)                 |               Dynamic Tour Details                |
+| :--------------------------------------------------: | :-----------------------------------------------: |
+| <img src="assets/auth-validation.png" width="450" /> | <img src="assets/tour-details.png" width="450" /> |
+
+### 📱 Mobile-First Excellence
+
+|                       Home                       |                   Navigation                    |                   Secure Login                    |                       Booking                       |
+| :----------------------------------------------: | :---------------------------------------------: | :-----------------------------------------------: | :-------------------------------------------------: |
+| <img src="assets/mobile-home.png" width="200" /> | <img src="assets/mobile-nav.png" width="200" /> | <img src="assets/mobile-login.png" width="200" /> | <img src="assets/mobile-booking.png" width="200" /> |
 
 ---
 
-## ✨ Key Features & Refactoring Highlights
+## 🛠️ Technical Highlights
 
-### 🏗️ Advanced Frontend Architecture
+### 🏗️ Architecture & Reusability
 
-- **Professional Refactoring:** Standardized naming conventions and implemented absolute import paths (`@/`).
-- **Atomic Component Design:** Developed highly reusable "Common" components (`Button`, `InputField`, `PasswordField`, `SelectBox`) for maximum scalability.
-- **Custom `cn` Utility:** Intelligent Tailwind class merging using `tailwind-merge` and `clsx`.
+- **Atomic Design:** Developed a comprehensive library of shared UI atoms (`Button`, `InputField`, `SelectBox`) within a modular directory structure to ensure 100% design consistency.
+- **Intelligent Styling:** Leveraged **Tailwind CSS 4.0** with a custom **cn utility** for optimized class management and lightning-fast styling.
+- **Path Aliases:** Configured absolute import paths (**@/**) for clean and maintainable module referencing.
 
-### ⚡ Performance & UX Optimization
+### ⚡ Performance & UX
 
-- **Route-Based Code Splitting:** Implemented `React.lazy` and `Suspense` with a custom centered loader.
-- **Smart Layout Strategy:** Flexbox-based wrapper with `flex-grow` logic to ensure a "Sticky Footer".
-- **Data-Driven UI:** Dynamic tour rendering with advanced filtering and custom-built pagination logic.
+- **Code Splitting:** Optimized initial load times using **React.lazy** and **Suspense** for efficient route-based delivery.
+- **State-Driven UI:** Engineered complex client-side filtering and custom pagination logic to handle dynamic data rendering smoothly.
+- **Clean Navigation:** Managed complex routing structures with **React Router 7**, ensuring a fast and responsive user flow.
 
 ### 🔐 Robust Form Management
 
-- **Type-Safe Validation:** Full Zod schema integration for Login, Registration, and Password Reset workflows.
-- **Password Security UI:** Custom `PasswordField` component with visibility toggles and real-time validation feedback.
-- **Accessibility (A11y):** ARIA labels, semantic HTML tags, and keyboard-friendly interactive elements.
+- **Data Integrity:** Integrated **Zod schemas** for strict validation across Authentication and Booking workflows.
+- **Secure Inputs:** Implemented real-time validation feedback and custom `PasswordField` components with visibility toggles for enhanced security.
 
 ---
 
@@ -66,48 +69,50 @@
 ```text
 src/
 ├── components/
-│   ├── common/      # Reusable UI Atoms (Button, InputField, SelectBox, etc.)
-│   └── layout/      # Shared components (Header, Footer, Navbar, AuthLayout)
-├── data/            # Centralized Mock Data (Tours, Currencies, Languages)
-├── layouts/         # High-level page wrappers (MainLayout)
-├── pages/
-│   ├── home/        # Landing page with Filtering & Pagination logic
-│   ├── forms/       # Auth modules (Login, Register, ResetPassword)
-│   ├── tour-details/# Dynamic tour views
-│   └── about/       # App metadata
+│   ├── common/      # Reusable Atoms (Button, Field, SelectBox, Spinner)
+│   └── layout/      # Shared structural components (Header, Footer, Navbar)
+├── layouts/         # High-level Page wrappers (MainLayout)
+├── pages/           # Feature-based views (Home, Auth, TourDetails)
 ├── routes/          # Centralized React Router configuration
-├── types/           # Domain-driven TypeScript definitions
-├── utils/           # Shared logic (Currency formatting, Pagination/Filter helpers)
-└── main.tsx         # Entry point
+├── types/           # Global TypeScript definitions
+├── utils/           # Shared logic (Tailwind-merge, Pagination, Filters)
+└── data/            # Centralized Data repository
 ```
 
 ---
 
-## 🚀 Getting Started
+## 🛠️ Installation & Local Setup
 
-1. **Clone & Install:**
-   ```bash
-   git clone https://github.com/HossamGezo/dubai_safari.git
-   npm install
-   ```
-2. **Run Development:**
-   ```bash
-   npm run dev
-   ```
-3. **Build for Production:**
-   ```bash
-   npm run build
-   ```
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/HossamGezo/dubai_safari.git
+cd dubai_safari
+```
+
+### 2. Install dependencies
+
+```bash
+npm install
+```
+
+### 3. Run Development
+
+```bash
+npm run dev
+```
 
 ---
 
-## 👨‍💻 Author
+## 👨‍💻 Connect with Me
 
-**Hossam Gouda**
+If you have any questions about this project or want to collaborate, feel free to reach out!
 
+- **LinkedIn:** [Hossam Gouda](https://linkedin.com/in/hossam-gouda)
 - **GitHub:** [@HossamGezo](https://github.com/HossamGezo)
-- **LinkedIn:** [Hossam Gouda](https://linkedin.com/in/your-profile)
+- **Email:** ha2ghossam10@gmail.com
 
 ---
 
-_This project was carefully developed to showcase strong expertise in modern React practices and Clean Code principles.._
+Developed with precision by **Hossam Gouda 💠**  
+**Front-End Engineer focused on building scalable and maintainable user interfaces.**

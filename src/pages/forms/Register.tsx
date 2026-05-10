@@ -25,7 +25,7 @@ const RegisterSchema = z
       .min(6, { message: "Password must be at least 6 characters" }),
   })
   .refine((data) => data.password === data.confirmPassword, {
-    message: "Passwords doesn't match",
+    message: "Passwords don't match",
     path: ["confirmPassword"],
   });
 type RegisterSchemaType = z.infer<typeof RegisterSchema>;
@@ -39,7 +39,7 @@ const Register = () => {
     reset,
     formState: { errors },
   } = useForm<RegisterSchemaType>({
-    mode: "onChange",
+    mode: "onBlur",
     resolver: zodResolver(RegisterSchema),
   });
 
